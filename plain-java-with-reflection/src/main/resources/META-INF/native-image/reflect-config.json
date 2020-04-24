@@ -1,0 +1,15 @@
+[
+	{
+		"name": "de.oio.MyComponent",
+		"methods": [
+			{
+				"name": "<init>",
+				"parameterTypes": []
+			},
+			{
+				"name": "doIt",
+				"parameterTypes": []
+			}
+		]
+	}
+]
