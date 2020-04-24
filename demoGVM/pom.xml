@@ -16,6 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
+		<start-class>com.trivadis.DemoGvmApplication</start-class>
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -35,6 +36,17 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.experimental</groupId>
+			<artifactId>spring-graal-native</artifactId>
+			<version>0.6.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-indexer</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -62,6 +74,39 @@
 			<url>https://repo.spring.io/milestone</url>
 		</pluginRepository>
 	</pluginRepositories>
+
+	<profiles>
+		<profile>
+			<id>graal</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.graalvm.nativeimage</groupId>
+						<artifactId>native-image-maven-plugin</artifactId>
+						<version>20.0.0</version>
+						<configuration>
+							<buildArgs>-Dspring.graal.remove-unused-autoconfig=true
+								--no-fallback --allow-incomplete-classpath
+								--report-unsupported-elements-at-runtime
+								-H:+ReportExceptionStackTraces --no-server</buildArgs>
+						</configuration>
+						<executions>
+							<execution>
+								<goals>
+									<goal>native-image</goal>
+								</goals>
+								<phase>package</phase>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-maven-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 
 </project>
