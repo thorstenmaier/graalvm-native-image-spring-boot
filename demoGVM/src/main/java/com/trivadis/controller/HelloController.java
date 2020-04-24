@@ -1,17 +1,17 @@
 package com.trivadis.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Component;
 
-@RestController
+//@RestController
+@Component
 public class HelloController {
 
-	@GetMapping("/")
+//	@GetMapping("/")
 	public String hello() {
 		return "Hello GraalVm ...!";
 	}
 
-	@GetMapping("/install")
+//	@GetMapping("/install")
 	public String installGraal() {
 		return "here can you click in roder to install..!";
 	}
