@@ -38,4 +38,5 @@ Vagrant.configure("2") do |cfg|
 
     cfg.vm.provision "shell", inline: "/root/scripts/bootstrap.sh '"+$vm_name+"' '"+$vm_ip+"'"
     cfg.vm.provision "shell", inline: "/root/scripts/networking.sh", run: "always"
+	cfg.vm.synced_folder './', "/opt/projects/spring-boot-native-image/", create: true
 end
