@@ -12,6 +12,7 @@ public class DemoGvmApplication {
 		ConfigurableApplicationContext ctx = SpringApplication.run(DemoGvmApplication.class, args);
 		RestTemplate  restTemplate = new RestTemplate();
 		String obj = restTemplate.getForObject("http://localhost:8089/", String.class);
+		
 		System.out.println(" ===  http://localhost:8089/ : " + obj);
 		ctx.close();
 	
