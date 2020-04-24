@@ -14,20 +14,20 @@ public class DemoGvmApplication {
 //
 //		System.out.println(" ===  http://localhost:8089/ : " + obj);
 //
-//		System.out.println("Max memory:   " + formatSize(Runtime.getRuntime().maxMemory()));
-//		System.out.println("Total memory: " + formatSize(Runtime.getRuntime().totalMemory()));
-//		System.out.println("Free memory:  " + formatSize(Runtime.getRuntime().freeMemory()));
-//		System.out.println(
-//				"Used memory:  " + formatSize(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()));
-//
-//		ctx.close();
+		System.out.println("Max memory:   " + formatSize(Runtime.getRuntime().maxMemory()));
+		System.out.println("Total memory: " + formatSize(Runtime.getRuntime().totalMemory()));
+		System.out.println("Free memory:  " + formatSize(Runtime.getRuntime().freeMemory()));
+		System.out.println(
+				"Used memory:  " + formatSize(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()));
+
+		ctx.close();
 	}
 
-//	public static String formatSize(long v) {
-//		if (v < 1024)
-//			return v + " B";
-//		int z = (63 - Long.numberOfLeadingZeros(v)) / 10;
-//		return String.format("%.1f %sB", (double) v / (1L << (z * 10)), " KMGTPE".charAt(z));
-//	}
+	public static String formatSize(long v) {
+		if (v < 1024)
+			return v + " B";
+		int z = (63 - Long.numberOfLeadingZeros(v)) / 10;
+		return String.format("%.1f %sB", (double) v / (1L << (z * 10)), " KMGTPE".charAt(z));
+	}
 
 }
