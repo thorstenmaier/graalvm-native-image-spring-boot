@@ -1,6 +1,9 @@
 package com.trivadis.controller;
 
+import org.springframework.stereotype.Component;
+
 //@RestController
+@Component
 public class HelloController {
 
 //	@GetMapping("/")
