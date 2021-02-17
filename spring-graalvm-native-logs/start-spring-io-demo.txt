@@ -1,0 +1,219 @@
+"c:\Program Files\AdoptOpenJDK\jdk-15.0.1.9-hotspot\bin\java.exe" -Dmaven.multiModuleProjectDirectory=C:\Users\tmaier\Desktop\demo "-Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" "-Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3\bin\m2.conf" "-Dmaven.ext.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven-event-listener.jar" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\idea_rt.jar=33026:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license" org.codehaus.classworlds.Launcher -Didea.version=2020.3.2 org.springframework.boot:spring-boot-maven-plugin:2.4.3-SNAPSHOT:build-image
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.4.3-SNAPSHOT:build-image (default-cli) > package @ demo >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ demo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\tmaier\Desktop\demo\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ demo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ demo ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo.DemoApplicationTests
+15:54:02.308 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:54:02.345 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:54:02.420 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:54:02.442 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+15:54:02.451 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.DemoApplicationTests]: class path resource [com/example/demo/DemoApplicationTests-context.xml] does not exist
+15:54:02.452 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.DemoApplicationTests]: class path resource [com/example/demo/DemoApplicationTestsContext.groovy] does not exist
+15:54:02.453 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:54:02.454 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:54:02.547 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.DemoApplicationTests]
+15:54:02.713 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\tmaier\Desktop\demo\target\classes\com\example\demo\DemoApplication.class]
+15:54:02.717 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+15:54:03.034 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.DemoApplicationTests]: using defaults.
+15:54:03.036 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:54:03.053 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+15:54:03.056 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+15:54:03.058 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+15:54:03.058 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@198d6542, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5e403b4a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5117dd67, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5be49b60, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2931522b, org.springframework.test.context.event.EventPublishingTestExecutionListener@7674b62c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@19e7a160, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@662706a7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@45a4b042, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@16b2bb0c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@327af41b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6cb6decd]
+15:54:03.070 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@147a5d08 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6676f6a0 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.demo.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@776b83cc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1bb266b3, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@770d3326, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e222612, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@29e495ff, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@614ddd49], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+15:54:03.102 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@147a5d08 testClass = DemoApplicationTests, testInstance = com.example.demo.DemoApplicationTests@3148f668, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6676f6a0 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.demo.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@776b83cc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1bb266b3, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@770d3326, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e222612, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@29e495ff, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@614ddd49], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+15:54:03.163 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.4.3-SNAPSHOT)
+
+2021-02-08 15:54:03.819  INFO 8476 --- [           main] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 15.0.1 on LAP0108 with PID 8476 (started by tmaier in C:\Users\tmaier\Desktop\demo)
+2021-02-08 15:54:03.824  INFO 8476 --- [           main] com.example.demo.DemoApplicationTests    : No active profile set, falling back to default profiles: default
+2021-02-08 15:54:04.885  INFO 8476 --- [           main] com.example.demo.DemoApplicationTests    : Started DemoApplicationTests in 1.717 seconds (JVM running for 5.082)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.318 s - in com.example.demo.DemoApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ demo ---
+[INFO] Building jar: C:\Users\tmaier\Desktop\demo\target\demo-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.3-SNAPSHOT:repackage (repackage) @ demo ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.4.3-SNAPSHOT:build-image (default-cli) < package @ demo <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.3-SNAPSHOT:build-image (default-cli) @ demo ---
+[INFO] Building image 'docker.io/library/demo:0.0.1-SNAPSHOT'
+[INFO] 
+[INFO]  > Pulling builder image 'docker.io/paketobuildpacks/builder:base' 100%
+[INFO]  > Pulled builder image 'paketobuildpacks/builder@sha256:35e29183d1aec1b4d79ebec4fb47ef309dc4e803e2706b5a7336d8ebe68053e8'
+[INFO]  > Pulling run image 'docker.io/paketobuildpacks/run:base-cnb' 100%
+[INFO]  > Pulled run image 'paketobuildpacks/run@sha256:d968d1e9827704283bdfd678d9cb2b85d6e0bd826b0cb1f14bbceb5bb6e0f571'
+[INFO]  > Executing lifecycle version v0.10.2
+[INFO]  > Using build cache volume 'pack-cache-5cbe5692dbc4.build'
+[INFO] 
+[INFO]  > Running creator
+[INFO]     [creator]     ===> DETECTING
+[INFO]     [creator]     4 of 11 buildpacks participating
+[INFO]     [creator]     paketo-buildpacks/graalvm                  5.0.0
+[INFO]     [creator]     paketo-buildpacks/executable-jar           4.0.0
+[INFO]     [creator]     paketo-buildpacks/spring-boot              4.0.0
+[INFO]     [creator]     paketo-buildpacks/spring-boot-native-image 3.0.0
+[INFO]     [creator]     ===> ANALYZING
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/executable-jar:class-path" from app image
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/spring-boot:helper" from app image
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/spring-boot:spring-cloud-bindings" from app image
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/spring-boot:web-application-type" from app image
+[INFO]     [creator]     ===> RESTORING
+[INFO]     [creator]     ===> BUILDING
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo GraalVM Buildpack 5.0.0
+[INFO]     [creator]       https://github.com/paketo-buildpacks/graalvm
+[INFO]     [creator]       Build Configuration:
+[INFO]     [creator]         $BP_JVM_VERSION              11.*            the Java version
+[INFO]     [creator]       Launch Configuration:
+[INFO]     [creator]         $BPL_JVM_HEAD_ROOM           0               the headroom in memory calculation
+[INFO]     [creator]         $BPL_JVM_LOADED_CLASS_COUNT  35% of classes  the number of loaded classes in memory calculation
+[INFO]     [creator]         $BPL_JVM_THREAD_COUNT        250             the number of threads in memory calculation
+[INFO]     [creator]         $JAVA_TOOL_OPTIONS                           the JVM launch flags
+[INFO]     [creator]       GraalVM JDK 11.0.10: Contributing to layer
+[INFO]     [creator]         Downloading from https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.0.0/graalvm-ce-java11-linux-amd64-21.0.0.tar.gz
+[INFO]     [creator]         Verifying checksum
+[INFO]     [creator]         Expanding to /layers/paketo-buildpacks_graalvm/jdk
+[INFO]     [creator]         Adding 129 container CA certificates to JVM truststore
+[INFO]     [creator]       GraalVM Native Image Substrate VM 11.0.10
+[INFO]     [creator]         Downloading from https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.0.0/native-image-installable-svm-java11-linux-amd64-21.0.0.jar
+[INFO]     [creator]         Verifying checksum
+[INFO]     [creator]         Installing substrate VM
+[INFO]     [creator]     Processing Component archive: /tmp/c70b00b4eabcc0140505acab756c394a88be7980634706cce11f53e09658707c/native-image-installable-svm-java11-linux-amd64-21.0.0.jar
+[INFO]     [creator]     Installing new component: Native Image (org.graalvm.native-image, version 21.0.0)
+[INFO]     [creator]         Writing env.build/JAVA_HOME.override
+[INFO]     [creator]         Writing env.build/JDK_HOME.override
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Spring Boot Buildpack 4.0.0
+[INFO]     [creator]       https://github.com/paketo-buildpacks/spring-boot
+[INFO]     [creator]       Image labels:
+[INFO]     [creator]         org.opencontainers.image.title
+[INFO]     [creator]         org.opencontainers.image.version
+[INFO]     [creator]         org.springframework.boot.spring-configuration-metadata.json
+[INFO]     [creator]         org.springframework.boot.version
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Spring Boot Native Image Buildpack 3.0.0
+[INFO]     [creator]       https://github.com/paketo-buildpacks/spring-boot-native-image
+[INFO]     [creator]       Build Configuration:
+[INFO]     [creator]         $BP_BOOT_NATIVE_IMAGE                  true  the build to create a native image (requires GraalVM)
+[INFO]     [creator]         $BP_BOOT_NATIVE_IMAGE_BUILD_ARGUMENTS        the arguments to pass to the native-image command
+[INFO]     [creator]       Native Image: Contributing to layer
+[INFO]     [creator]         GraalVM Version 21.0.0 (Java Version 11.0.10+8-jvmci-21.0-b06)
+[INFO]     [creator]         Executing native-image -H:Name=/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication -cp /workspace:/workspace/BOOT-INF/classes:/workspace/BOOT-INF/lib/spring-boot-2.4.3-SNAPSHOT.jar:/workspace/BOOT-INF/lib/spring-context-5.3.4-SNAPSHOT.jar:/workspace/BOOT-INF/lib/spring-aop-5.3.4-SNAPSHOT.jar:/workspace/BOOT-INF/lib/spring-beans-5.3.4-SNAPSHOT.jar:/workspace/BOOT-INF/lib/spring-expression-5.3.4-SNAPSHOT.jar:/workspace/BOOT-INF/lib/spring-boot-autoconfigure-2.4.3-SNAPSHOT.jar:/workspace/BOOT-INF/lib/logback-classic-1.2.3.jar:/workspace/BOOT-INF/lib/logback-core-1.2.3.jar:/workspace/BOOT-INF/lib/log4j-to-slf4j-2.13.3.jar:/workspace/BOOT-INF/lib/log4j-api-2.13.3.jar:/workspace/BOOT-INF/lib/jul-to-slf4j-1.7.30.jar:/workspace/BOOT-INF/lib/jakarta.annotation-api-1.3.5.jar:/workspace/BOOT-INF/lib/spring-core-5.3.4-SNAPSHOT.jar:/workspace/BOOT-INF/lib/spring-jcl-5.3.4-SNAPSHOT.jar:/workspace/BOOT-INF/lib/snakeyaml-1.27.jar:/workspace/BOOT-INF/lib/spring-native-0.9.0-SNAPSHOT.jar:/workspace/BOOT-INF/lib/slf4j-api-1.7.30.jar:/workspace/BOOT-INF/lib/spring-boot-jarmode-layertools-2.4.3-SNAPSHOT.jar com.example.demo.DemoApplication
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]    classlist:   8,010.33 ms,  0.96 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]        (cap):     903.26 ms,  1.18 GB
+[INFO]     [creator]     Took: 16ms to find META-INF/native-image/org.springframework.nativex/buildtools/native-image.properties returning 0 entries: []
+[INFO]     [creator]        _____                     _                             _   __           __     _              
+[INFO]     [creator]       / ___/    ____    _____   (_)   ____    ____ _          / | / /  ____ _  / /_   (_) _   __  ___ 
+[INFO]     [creator]       \__ \    / __ \  / ___/  / /   / __ \  / __ `/         /  |/ /  / __ `/ / __/  / / | | / / / _ \
+[INFO]     [creator]      ___/ /   / /_/ / / /     / /   / / / / / /_/ /         / /|  /  / /_/ / / /_   / /  | |/ / /  __/
+[INFO]     [creator]     /____/   / .___/ /_/     /_/   /_/ /_/  \__, /         /_/ |_/   \__,_/  \__/  /_/   |___/  \___/ 
+[INFO]     [creator]             /_/                            /____/                                                     
+[INFO]     [creator]     Removing unused configurations
+[INFO]     [creator]     Verification turned on
+[INFO]     [creator]     Removing XML support
+[INFO]     [creator]     Removing JMX support
+[INFO]     [creator]     Use -Dspring.native.verbose=true on native-image call to see more detailed information from the feature
+[INFO]     [creator]     feature operating mode: reflection
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]        setup:   5,367.16 ms,  1.18 GB
+[INFO]     [creator]     Processing META-INF/spring.factories files...
+[INFO]     [creator]     Took: 13ms to find META-INF/spring.factories returning 5 entries: [/workspace/BOOT-INF/lib/spring-boot-autoconfigure-2.4.3-SNAPSHOT.jar!META-INF/spring.factories, /workspace/BOOT-INF/lib/spring-boot-jarmode-layertools-2.4.3-SNAPSHOT.jar!META-INF/spring.factories, /workspace/BOOT-INF/lib/spring-native-0.9.0-SNAPSHOT.jar!META-INF/spring.factories, /workspace/BOOT-INF/lib/spring-boot-2.4.3-SNAPSHOT.jar!META-INF/spring.factories, /workspace/BOOT-INF/lib/spring-beans-5.3.4-SNAPSHOT.jar!META-INF/spring.factories]
+[INFO]     [creator]     Processing spring.factories - EnableAutoConfiguration lists #130 configurations
+[INFO]     [creator]     Excluding 120 auto-configurations from spring.factories file
+[INFO]     [creator]     Processing spring.factories - PropertySourceLoader lists #2 property source loaders
+[INFO]     [creator]     Warning: class initialization of class org.springframework.boot.validation.MessageInterpolatorFactory failed with exception java.lang.NoClassDefFoundError: javax/validation/ValidationException. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=org.springframework.boot.validation.MessageInterpolatorFactory to explicitly request delayed initialization of this class.
+[INFO]     [creator]     Warning: class initialization of class org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory failed with exception java.lang.NoClassDefFoundError: org/apache/tomcat/JarScanFilter. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory to explicitly request delayed initialization of this class.
+[INFO]     [creator]     Took: 13ms to find META-INF/spring.components returning 0 entries: []
+[INFO]     [creator]     Found no META-INF/spring.components -> synthesizing one...
+[INFO]     [creator]     Computed spring.components is 
+[INFO]     [creator]     vvv
+[INFO]     [creator]     com.example.demo.DemoApplication=org.springframework.stereotype.Component
+[INFO]     [creator]     ^^^
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]     (clinit):     880.28 ms,  3.87 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]   (typeflow):  68,284.06 ms,  3.87 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]    (objects):  93,070.15 ms,  3.87 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]   (features):   1,834.02 ms,  3.87 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]     analysis: 165,693.17 ms,  3.87 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]     universe:   2,662.66 ms,  3.87 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]      (parse):  10,392.96 ms,  3.87 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]     (inline):  17,102.56 ms,  4.54 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]    (compile):  75,078.17 ms,  4.40 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]      compile: 105,690.44 ms,  4.40 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]        image:   5,559.35 ms,  4.40 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]        write:   1,909.81 ms,  4.40 GB
+[INFO]     [creator]     [/layers/paketo-buildpacks_spring-boot-native-image/native-image/com.example.demo.DemoApplication:342]      [total]: 297,023.59 ms,  4.40 GB
+[INFO]     [creator]       Removing bytecode
+[INFO]     [creator]       Process types:
+[INFO]     [creator]         native-image: /workspace/com.example.demo.DemoApplication (direct)
+[INFO]     [creator]         task:         /workspace/com.example.demo.DemoApplication (direct)
+[INFO]     [creator]         web:          /workspace/com.example.demo.DemoApplication (direct)
+[INFO]     [creator]     ===> EXPORTING
+[INFO]     [creator]     Adding 1/1 app layer(s)
+[INFO]     [creator]     Reusing layer 'launcher'
+[INFO]     [creator]     Adding layer 'config'
+[INFO]     [creator]     Adding layer 'process-types'
+[INFO]     [creator]     Adding label 'io.buildpacks.lifecycle.metadata'
+[INFO]     [creator]     Adding label 'io.buildpacks.build.metadata'
+[INFO]     [creator]     Adding label 'io.buildpacks.project.metadata'
+[INFO]     [creator]     Adding label 'org.opencontainers.image.title'
+[INFO]     [creator]     Adding label 'org.opencontainers.image.version'
+[INFO]     [creator]     Adding label 'org.springframework.boot.spring-configuration-metadata.json'
+[INFO]     [creator]     Adding label 'org.springframework.boot.version'
+[INFO]     [creator]     Setting default process type 'web'
+[INFO]     [creator]     *** Images (dd580bcc7096):
+[INFO]     [creator]           docker.io/library/demo:0.0.1-SNAPSHOT
+[INFO]     [creator]     Adding cache layer 'paketo-buildpacks/graalvm:jdk'
+[INFO]     [creator]     Adding cache layer 'paketo-buildpacks/spring-boot-native-image:native-image'
+[INFO] 
+[INFO] Successfully built image 'docker.io/library/demo:0.0.1-SNAPSHOT'
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  07:43 min
+[INFO] Finished at: 2021-02-08T16:01:36+01:00
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0

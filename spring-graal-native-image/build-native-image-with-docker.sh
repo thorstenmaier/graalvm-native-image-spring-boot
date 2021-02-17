@@ -1,4 +1,3 @@
 docker build -t demogvm-build .
 docker run -v ${PWD}:/usr/src/app --name temp --rm demogvm-build mvn clean package
-docker run -v ${PWD}:/usr/src/app --name temp --rm demogvm-build native-image --no-fallback -jar target/spring-graal-native-image-0.0.1-SNAPSHOT.jar
-./demoGVM-0.0.1-SNAPSHOT
+docker run -v ${PWD}:/usr/src/app --name temp --rm demogvm-build native-image --no-fallback --verbose -H:EnableURLProtocols=http -Dspring.native.remove-yaml-support=true  -Dspring.native.remove-jmx-support=true -Dspring.xml.ignore=true -Dspring.spel.ignore=true -jar target/spring-graal-native-image-0.0.1-SNAPSHOT.jar
